@@ -5,7 +5,8 @@ ROOT_DIR=$(dirname "$BIN_DIR")
 cd "$ROOT_DIR"
 echo "-----> Downloaing browsers builds for playwright..."
 
-cd "$BUILD_DIR"
+cd ~
+cd .heroku
 python -m playwright install
 
 echo "-----> Builds downloaded"
